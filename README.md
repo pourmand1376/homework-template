@@ -3,5 +3,5 @@
 قالب تمرین‌های کلاسی
 
 ## TODO
-- [ ] Github workflow Problem!
+- [ ] Github workflow doesn't work!
 - [ ] Template doesn't work in overleaf  
