@@ -14,10 +14,9 @@ jobs:
       - uses: xu-cheng/texlive-action/full@v1
         with:
           run: |
-            for tex in *.tex
-            do
-              xelatex -synctex=1 -interaction=nonstopmode $tex
-            done
+            xelatex -synctex=1 -interaction=nonstopmode question.tex
+            xelatex -synctex=1 -interaction=nonstopmode solution.tex
+            
 
       - name: Copy PDFs to target directory
         run: |
