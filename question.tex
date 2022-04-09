@@ -1,0 +1,24 @@
+% !TeX program = xelatex
+\input{packages}
+
+\input{template/commands}
+
+\begin{document}
+	\def\ci{\perp\!\!\!\perp}
+	
+	% header{<Assignment-Number>}{<Assignment-Title>}{<Deadline-Date>}{<Gathered-by>}{<Supervised-by>}
+	\header
+	{کوییز اول}{مرور آمار و احتمال}{۱۵ اسفند}{سپیده عبداللهی، امیر پورمند}{مهران حسین‌زاده}
+	\input{template/info}
+	% partheader{<Part-Name>}{<Part-Total-Score>}
+		\hrule
+	\begin{enumerate}
+		% question{<Question-TexFile-Path>}{<Question-Score>}
+		\item \input{questions/th1}
+		\item \input{questions/th2}
+		\item \input{questions/th3}
+	
+	\end{enumerate}
+	
+	\vspace{0.5cm}	
+\end{document}
